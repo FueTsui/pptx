@@ -1,0 +1,35 @@
+{
+  "schema_version": "pptx.audit-rules/v1",
+  "description": "自动审计只读取成品，不通过缩字、改行距或移动元素来掩盖问题。",
+  "aspect_ratio": 1.7777777777777777,
+  "aspect_ratio_tolerance": 0.002,
+  "minimum_font_size_pt": 8,
+  "size_tolerance_pt": 0.15,
+  "bounds_tolerance_pt": 1.0,
+  "intersection_tolerance_pt": 0.75,
+  "overlap_fraction": 0.01,
+  "line_overlap_tolerance_fraction": 0.10,
+  "minimum_multiline_spacing_ratio": 1.05,
+  "opaque_alpha_threshold": 0.90,
+  "occlusion_fraction": 0.01,
+  "render_width": 1600,
+  "render_height": 900,
+  "style_fields": ["font_family", "font_size_pt", "bold", "italic", "color", "line_spacing", "letter_spacing_pt"],
+  "allowed_roles": ["cover-title", "title", "subtitle", "heading", "subheading", "body", "lead", "caption", "label", "code", "metric", "meta", "h1", "h2", "h3", "p"],
+  "allowed_variants": {
+    "emphasis": {"may_differ": ["bold"], "require": {"bold": true}},
+    "inverse": {"may_differ": ["color"], "require": {"color": "FFFFFF"}}
+  },
+  "hierarchy": [
+    ["h1", "h2", "h3", "p"],
+    ["title", "subtitle", "body", "caption"],
+    ["cover-title", "title", "heading", "subheading", "lead", "body", "caption", "meta"]
+  ],
+  "limitations": [
+    "结构检查不能替代 PowerPoint 实际排版和逐页渲染。",
+    "字体检查包括明确字体声明、本机字体可用性及 PowerPoint 返回字体名，无法证明每个字形都没有局部回退。",
+    "文字碰撞使用 PowerPoint 每个实际文本行的 Bound 矩形；矩形不是逐像素字形轮廓。",
+    "前景图片检查可见区域 alpha；任意旋转、分组、表格、复杂轮廓等无法完整测量时须报告未验证，不能冒充通过。",
+    "自动检查不等于人工审美验收；报告渲染图仍须逐页查看。"
+  ]
+}

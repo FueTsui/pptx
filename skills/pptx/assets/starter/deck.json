@@ -1,0 +1,17 @@
+{
+  "title": "__TITLE__",
+  "lang": "zh-CN",
+  "theme": {
+    "palette": "yellow",
+    "typography": "clean",
+    "shape": "soft",
+    "direction": "fresh-default"
+  },
+  "controls": {
+    "next_preview": true,
+    "click_navigation": false,
+    "show_progress": true,
+    "show_counter": true
+  },
+  "slides": []
+}

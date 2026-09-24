@@ -1,0 +1,4 @@
+interface:
+  display_name: "pptx"
+  short_description: "自动创作并生成可编辑文字的 PPTX，统一文本层级与多行排版"
+  default_prompt: "使用 $pptx，根据我提供的主题或材料，连续完成逐页创作和 PPTX 生成，保持同级文字样式一致、行间清晰，并交付演示稿。"

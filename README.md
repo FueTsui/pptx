@@ -12,7 +12,7 @@
 
 - [在线演示](https://fuetsui.github.io/pptx/Agents.html)
 - [原始 HTML 文件](skills/pptx/references/Agents.html)
-- 可下载 HTML 后离线打开。原文件字节保持不变，样本中的 OpenAI Academy 等来源标记予以保留；本项目不表示与其存在官方关系。
+- 可下载 HTML 后离线打开。28 页统一添加“机密及专有资料 · 仅限内部使用”，样本中的 OpenAI Academy 等来源标记予以保留；本项目不表示与其存在官方关系。
 - 样本展示 HTML 成果，不包含这份样本的逐页源码项目或 PPTX 文件。
 
 ## 能力
@@ -31,7 +31,7 @@ ClawHub：
 clawhub install @FueTsui/pptx
 ```
 
-Codex：下载 Release 中的 `pptx-1.0.0.zip`，将其中的 `pptx` 文件夹放入 `~/.codex/skills/`。也可以从本仓库复制 `skills/pptx`。
+Codex：下载 Release 中的 `pptx-1.0.1.zip`，将其中的 `pptx` 文件夹放入 `~/.codex/skills/`。也可以从本仓库复制 `skills/pptx`。
 
 技能需要 Python 3.10+、Chrome/Chromium（或支持的 Edge）和 `python-pptx`：
 
